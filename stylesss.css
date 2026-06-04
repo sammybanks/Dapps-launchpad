@@ -1,0 +1,227 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 40px 20px 20px;
+            margin-top: auto;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ffffff !important;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-column ul li a {
+            color: #bbbbbb !important;
+            text-decoration: none !important;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #ffffff;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #333333;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #333333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            flex-direction: row !important;
+            color: #bbbbbb;
+        }
+        
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .footer-bottom-links a {
+            color: #bbbbbb !important;
+            font-size: 1.125rem;
+            text-decoration: none !important;
+        }
+        
+        .footer-bottom-links a:hover {
+            color: #ffffff;
+        }
+        
+        .disclaimer {
+            margin-top: 10px;
+            font-size: 10px;
+            line-height: 1.4;
+            max-width: 300px;
+        }
+        .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #333333;
+    border-radius: 50%;
+    color: #ffffff !important;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #555555;
+    transform: translateY(-2px);
+}
+        
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-bottom {
+                flex-direction: column !important;
+                gap: 10px;
+                text-align: left;
+                align-items: flex-start !important;
+            }
+            
+            .footer-bottom-links {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .disclaimer {
+                max-width: 100%;
+                text-align: center;
+                margin-top: 15px;
+            }}
+            
+            
+            .crypto-ticker {
+            background: linear-gradient(90deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 12px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            border-top: 1px solid #2a3a5a;
+            border-bottom: 1px solid #2a3a5a;
+        }
+        
+        .ticker-container {
+            display: inline-block;
+            padding-left: 100%;
+            animation: ticker 60s linear infinite;
+        }
+        
+        .ticker-item {
+            display: inline-block;
+            margin: 0 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .crypto-name {
+            font-weight: bold;
+            color: #4cc9f0;
+            margin-right: 5px;
+        }
+        
+        .crypto-price {
+            color: #f8f8f8;
+        }
+        
+        .price-up {
+            color: #4ade80;
+        }
+        
+        .price-down {
+            color: #f87171;
+        }
+        
+        .crypto-change {
+            font-size: 0.9em;
+            margin-left: 8px;
+        }
+        
+        @keyframes ticker {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .ticker-item {
+                margin: 0 15px;
+            }
+            
+            .ticker-container {
+                animation-duration: 40s;
+            }
+        }
